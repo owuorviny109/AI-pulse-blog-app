@@ -1,9 +1,7 @@
 AI Pulse: Exploring the Evolving Role of AI in Tech
-🔗 Live Demo: View the Website
+🔗 Live Demo: https://owuorviny109.github.io/AI-pulse-blog-app/
 
 
-
-<!-- Ensure the image is correctly placed in the 'images' folder -->
  Project Overview
 AI Pulse is a fully responsive, multi-section blog website designed to explore the transformative impact of Artificial Intelligence (AI) on the modern technology landscape.
 
@@ -81,7 +79,7 @@ Dynamic content display
 
 Code is well-commented, easy to extend, and highly readable.
 
-🛠 Tech Stack
+ Tech Stack
 Technology	Description
 HTML5	Semantic markup for accessibility and structure
 CSS3	Responsive layouts via Flexbox & Grid, media queries, CSS Variables
