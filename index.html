@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Pulse - Exploring AI's Role in Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Optional: AOS (Animate on Scroll) Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#home" class="logo-link"><h1 class="logo">AI Pulse</h1></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active-link">Home</a></li>
+                    <li><a href="#what-is-ai" class="nav-link">What is AI?</a></li>
+                    <li><a href="#impacts" class="nav-link">Impacts</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-toggles">
+                <button id="dark-mode-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="page active-page">
+            <div class="container hero">
+                <div class="hero-content" data-aos="fade-up">
+                    <h2>Exploring AI’s Role in Shaping Tomorrow’s Tech.</h2>
+                    <p id="typing-animation-container">
+                        <span id="typing-text"></span><span class="cursor">|</span>
+                    </p>
+                    <div class="teaser-box" data-aos="fade-up" data-aos-delay="200">
+                        <h3>The Rise of AI in Tech: Opportunity or Threat?</h3>
+                        <p>AI is evolving faster than many expected. From writing code to diagnosing disease, this once-fictional idea is becoming a core part of our digital ecosystem. But is the tech industry ready?</p>
+                        <a href="#blog" class="btn nav-link">Explore Blog</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What is AI? Section -->
+        <section id="what-is-ai" class="page">
+            <div class="container section-padding">
+                <h2 data-aos="fade-down">What is Artificial Intelligence?</h2>
+                <p class="section-intro" data-aos="fade-down" data-aos-delay="100">A foundational overview of Artificial Intelligence, its core concepts, and key subfields.</p>
+                <div class="cards-container">
+                    <div class="card clickable-ai-concept" data-concept="core" data-aos="fade-up">
+                        <i class="fas fa-brain card-icon"></i>
+                        <h3>Core Concept</h3>
+                        <p>AI refers to the simulation of human intelligence in machines programmed to think like humans and mimic their actions.</p>
+                         <span class="learn-more-indicator">Learn More <i class="fas fa-chevron-right"></i></span>
+                    </div>
+                    <div class="card clickable-ai-concept" data-concept="ml" data-aos="fade-up" data-aos-delay="150">
+                        <i class="fas fa-cogs card-icon"></i>
+                        <h3>Machine Learning</h3>
+                        <p>A subset of AI where systems learn and improve from experience without being explicitly programmed.</p>
+                         <span class="learn-more-indicator">Learn More <i class="fas fa-chevron-right"></i></span>
+                    </div>
+                    <div class="card clickable-ai-concept" data-concept="dl" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-network-wired card-icon"></i>
+                        <h3>Deep Learning</h3>
+                        <p>A specialized form of machine learning that uses neural networks with many layers to analyze various factors.</p>
+                         <span class="learn-more-indicator">Learn More <i class="fas fa-chevron-right"></i></span>
+                    </div>
+                </div>
+                <!-- Detailed AI Concept View (Initially Hidden) -->
+                <div id="ai-concept-detail-view" class="ai-concept-detail-view" style="display: none;">
+                    <button id="back-to-ai-concepts" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back to Overview</button>
+                    <div id="ai-concept-detail-content">
+                        <!-- Dynamic content for AI concepts will be injected here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impacts of AI Section -->
+        <section id="impacts" class="page">
+            <div class="container section-padding">
+                <h2 data-aos="fade-down">Impacts of AI</h2>
+
+                <!-- Impact Grid Overview -->
+                <div class="impact-grid-container">
+                    <div class="impact-grid">
+                        <div class="impact-item clickable-impact" data-impact="automation" data-aos="zoom-in">
+                            <i class="fas fa-robot impact-icon"></i>
+                            <h3>Automation</h3>
+                            <p>AI's role in automating tasks and processes.</p>
+                        </div>
+                        <div class="impact-item clickable-impact" data-impact="jobmarket" data-aos="zoom-in" data-aos-delay="100">
+                            <i class="fas fa-briefcase impact-icon"></i>
+                            <h3>Job Market</h3>
+                            <p>How AI influences job creation and displacement.</p>
+                        </div>
+                        <div class="impact-item clickable-impact" data-impact="productivity" data-aos="zoom-in" data-aos-delay="200">
+                            <i class="fas fa-chart-line impact-icon"></i>
+                            <h3>Productivity</h3>
+                            <p>Boosting efficiency and output with AI tools.</p>
+                        </div>
+                        <div class="impact-item clickable-impact" data-impact="innovation" data-aos="zoom-in" data-aos-delay="300">
+                            <i class="fas fa-lightbulb impact-icon"></i>
+                            <h3>Innovation</h3>
+                            <p>Driving new discoveries and technological advancements.</p>
+                        </div>
+                        <div class="impact-item clickable-impact" data-impact="ai-in-kenya" data-aos="zoom-in" data-aos-delay="400">
+                            <i class="fas fa-flag impact-icon"></i>
+                            <h3>AI in Kenya</h3>
+                            <p>Specific applications and growth in the Kenyan context.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detailed Impact Content Area (Initially Hidden) -->
+                <div id="impact-detail-view" class="impact-detail-view" style="display: none;">
+                    <button id="back-to-impact-grid" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back to Overview</button>
+                    <div id="impact-detail-content">
+                        <!-- Dynamic content for impacts will be injected here by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Posts Section -->
+        <section id="blog" class="page">
+            <div class="container section-padding">
+                <h2 data-aos="fade-down">Latest Insights</h2>
+                <div class="blog-posts-container">
+                    <article class="blog-post" data-aos="fade-up">
+                        <h3 class="blog-title">How AI is Automating Tech Jobs</h3>
+                        <p class="blog-excerpt">Explore the evolving landscape of tech employment as AI takes over routine tasks and creates new specialized roles...</p>
+                        <button class="toggle-content-btn">Read More</button>
+                        <div class="full-content">
+                            <p>Artificial Intelligence is no longer a futuristic concept but a present-day reality transforming various sectors, including the tech industry itself. One of the most discussed impacts of AI is its role in automating jobs. Tasks that were once performed by human programmers, testers, and system administrators are increasingly being handled by AI-powered tools. For example, AI can write basic code, automate software testing processes, and manage cloud infrastructure with minimal human intervention. While this raises concerns about job displacement, it also signifies a shift in the skills required. Tech professionals will need to adapt by focusing on more complex problem-solving, strategic thinking, and the development and maintenance of these AI systems. The future likely involves a collaborative environment where humans and AI work together to achieve greater efficiency and innovation.</p>
+                        </div>
+                    </article>
+                    <article class="blog-post" data-aos="fade-up" data-aos-delay="150">
+                        <h3 class="blog-title">Top 5 AI Tools Developers Love</h3>
+                        <p class="blog-excerpt">Discover the AI-powered tools that are becoming indispensable for modern software development...</p>
+                        <button class="toggle-content-btn">Read More</button>
+                        <div class="full-content">
+                            <p>Developers are increasingly leveraging AI tools to streamline their workflows, improve code quality, and accelerate development cycles. Here are five popular ones:</p>
+                            <ol>
+                                <li><strong>GitHub Copilot:</strong> An AI pair programmer that suggests code and entire functions in real-time.</li>
+                                <li><strong>Tabnine:</strong> Another AI code completion tool that supports a wide range of languages and IDEs.</li>
+                                <li><strong>Snyk:</strong> Uses AI to identify and fix vulnerabilities in code and dependencies.</li>
+                                <li><strong>Google's Vertex AI:</strong> A platform for building, deploying, and managing machine learning models.</li>
+                                <li><strong>IntelliCode (Visual Studio):</strong> Provides AI-assisted IntelliSense, offering context-aware code completions.</li>
+                            </ol>
+                            <p>These tools not only boost individual productivity but also foster better coding practices and help teams deliver robust software faster.</p>
+                        </div>
+                    </article>
+                    <article class="blog-post" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="blog-title">The Ethical Debate: AI in Hiring</h3>
+                        <p class="blog-excerpt">AI promises to make hiring more efficient, but what are the ethical considerations and potential biases?...</p>
+                        <button class="toggle-content-btn">Read More</button>
+                        <div class="full-content">
+                            <p>Using Artificial Intelligence in the hiring process offers numerous benefits, such as screening large volumes of applications quickly and identifying suitable candidates based on predefined criteria. AI can analyze resumes, conduct initial video interviews, and even assess a candidate's skills through online tests. However, this technology is not without its ethical challenges. A major concern is the potential for AI algorithms to perpetuate existing biases. If an AI is trained on historical data that reflects past discriminatory practices, it may inadvertently favor certain demographic groups over others. Ensuring fairness, transparency, and accountability in AI-driven hiring tools is crucial. Companies must actively work to mitigate bias, regularly audit their AI systems, and consider a human-in-the-loop approach to make final hiring decisions.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="page">
+            <div class="container section-padding">
+                <h2 data-aos="fade-down">About Me & This Project</h2>
+                <div class="about-content">
+                    <p data-aos="fade-right">Hello! I'm Vinncent Omondi, a junior software developer and AWS Certified Cloud Practitioner (AWS CPP) passionate about web development and the fascinating world of Artificial Intelligence.</p>
+                    <p data-aos="fade-left">"AI Pulse" is a project built to demonstrate practical application of HTML, CSS, and JavaScript concepts. The goal was to create a modern, responsive, and interactive multi-page style blog website focusing on AI's impact. This project explores dynamic content loading, smooth transitions, and responsive design techniques.</p>
+                    <p data-aos="fade-right">Through this project, I've honed my skills in DOM manipulation, event handling, CSS Flexbox/Grid, and creating a user-friendly experience. Thanks for visiting!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="page">
+            <div class="container section-padding">
+                <h2 data-aos="fade-down">Get In Touch</h2>
+                <form id="contact-form" data-aos="fade-up">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                    <p id="form-status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© <span id="current-year"></span> AI Pulse. Created by Vincent Omondi.</p>
+            <p>Deployed via: <a href="[Your Deployment Link]" id="deployment-link" target="_blank" rel="noopener noreferrer">Github pages</a></p>
+        </div>
+    </footer>
+
+    <button id="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', event => {
+                event.preventDefault();
+                const targetId = link.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
